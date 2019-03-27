@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://chad-bennett.github.io/eresa/demo/transform.html -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>transforms page</title>
+  <style>
+    body {
+      background-color: #fedcba;
+    }
+
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: #012;
+      margin: 1rem;
+    }
+
+    #box1 { transition: transform 1s; background-color 2s; }
+
+    #box1:hover { transform: rotate(180deg);
+                  background-color: cyan;}
+
+    #box2 { transition: transform 1s; background-color 5s;}
+
+    #box2:hover { transform: translate(999px, 500px); background-color: #f51723}
+
+    #box3 { transition: transform 0.25s; background-color 5s;}
+
+    #box3:hover { transform: matrix(1, -0.3, 0, 1, 0, 0); background-color: #7da321}
+
+    #box4 { transition: transform 10s; background-color 5s;}
+
+    #box4:hover {   transform: scale(-10, -100); background-color: #000}
+
+    #box5 { transition: transform 10s; background-color 5s;}
+
+    #box5:hover {  transform: skew(360deg, 360deg); background: linear-gradient(to right, #c31432, #240b36);}
+
+    #box6 { transition: transform 1s; background-color 5s;}
+
+    #box6:hover { transform: rotateX(90deg); background: blue; }
+
+    #box7 { transition: transform 20s; background-color 5s; border-radius: 10px;}
+
+    #box7:hover { transform: translateY(-1000px); background-image: url("elevator.gif");}
+
+    #box8 { transition: transform 1s; background-color 5s;}
+
+    #box8:hover { transform: rotate(90deg) scale(3.5) translateY(-50%) translateX(50%); background-image: url("gnomed.png");}
+  </style>
+</head>
+
+<body>
+  <div id="box1"> </div>
+  <div id="box2"> </div>
+  <div id="box3"> </div>
+  <div id="box4"> </div>
+  <div id="box5"> </div>
+  <div id="box6"> </div>
+  <div id="box7"> </div>
+  <div id="box8"> </div>
+
+
+</body></html>
