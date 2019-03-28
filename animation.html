@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>css animation</title>
+  <style>
+    body {
+      background-color: #abcdef;
+    }
+
+    @keyframes example {
+      0% {
+        background-color: red;
+      }
+
+      25% {
+        background-color: yellow;
+      }
+
+      50% {
+        background-color: blue;
+      }
+
+      100% {
+        background-color: green;
+      }
+    }
+
+    #boxter {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      animation-name: example;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    #b {
+      width: 100px;
+      height: 100px;
+      padding: 5px;
+      margin: 10px;
+      background-color: red;
+      animation-name: b;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+
+    #c {
+      width: 100px;
+      height: 100px;
+      margin: 25px;
+      padding: 5px;
+      position: relative;
+      background-color: yellow;
+      animation-name: c;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes b {
+      0% {
+        transform: 10px 10px;
+      }
+
+      25% {
+        transform: rotate(90deg);
+      }
+
+      50% {
+        background-color: green;
+      }
+
+      75% {
+        background-color: blue;
+        border-radius: 70px;
+      }
+
+      100% {
+        background-color: red;
+      }
+}
+      @keyframes c {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+          border-radius: 70px;
+        }
+
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+          border-radius: 70px;
+        }
+
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+        }
+
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="boxter"> </div>
+  <div id="b"> </div>
+  <div id="c"> </div>
+</body>
+
+</html>
