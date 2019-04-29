@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>prom</title>
-<style>
-  body{
-    background: linear-gradient(to left, #373b44, #4286f4);
-    width: 100px;
-    height: 100px;
-  }
 
-div{
-  width: 600px;
-  height: 600px;
-  background-color: #6dd5ed;
-  margin: 1;
-}
-#box1{
-  transition: transform 2s;
-}
-#box1:hover{
-  transfrom: translate(1000px, 1000px);
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    body {
+      background: linear-gradient(to left, #373b44, #4286f4);
+    }
 
-}
+    div {
+      width: 100px;
+      height: 100px;
+      padding: 10px;
+      background-color: #6dd5ed;
+      border-radius: 6px;
+      position: relative;
+      animation-name: example;
+      animation-duration: 5s;
+      animation-iteration-count: 1;
+      text-align: center;
+    }
+
+    @keyframes example {
+      from {
+        left: -500px;
+      }
+
+      to {
+        left: 0px;
+      }
+    }
+
+    #box1 {
+      animation-timing-function: linear;
+    }
+  </style>
 
 
+</head>
 
+<body>
 
+  <div id="box1">skjefg</div>
 
+</body>
 
-
-</style>
-
-
-  </head>
-  <body>
-    <div id="box1"></div>
-    <nav>
-
-    </nav>
-  </body>
 </html>
 <!--
 nav{
@@ -50,4 +56,5 @@ nav{
   margin: 50px;
 }
 url(qbkls.png)
+infinite
 -->
