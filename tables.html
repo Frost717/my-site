@@ -9,6 +9,7 @@
     th,
     td {
       border: 1px solid black;
+      border-collapse: collapse;
     }
 
     th,
@@ -19,14 +20,19 @@
     th {
       text-align: left;
     }
+    tr:hover{
+      background-color: black;
+      color: #148616;
+      transform: scale(1.05);
+      transition: transform .3s;
+    }
 
     table#t01 {
       width: 75%;
-      background-color: #254862
     }
 
     table#t01 tr:nth-child(even) {
-      background-color: #eee;
+      background-color: #bbb;
     }
 
     table#t01 tr:nth-child(odd) {
