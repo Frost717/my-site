@@ -5,10 +5,23 @@
   <meta charset="utf-8">
   <title>Grid page</title>
   <style>
+  body{
+    background: #23d09e;
+  }
+  .grid{
+    width: 80%;
+    margin: 0 auto;
+  }
+  footer li {
+    display: inline-block;
+  }
+  @media only screen and (min-width: 800px){
+
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 10px;
+      width: 100%;
     }
 
     .span-col-2 {
@@ -24,22 +37,38 @@
     }
     #title{
       background: #341253;
+      height: 100px;
+      text-align: center;
+      padding: 10px;
     }
     nav{
       background: #953715;
+      height: 15%;
     }
     footer li {
       display: inline-block;
     }
+    article{
+      background: #2c5a96;
+      padding: 5px;
+    }
+  }
 
   </style>
 </head>
 
 <body>
   <div class="grid">
-    <div id="title" class="span-col-2">Item 1</div>
+    <div id="title" class="span-col-2"><font size="7"><i><b>SeaHorses are cool</b></i></font></div>
     <div id="image"><img src="SeaHorse.png" alt="seahorse can kick your butt!" /></div>
-    <nav>Item 3</nav>
+    <nav><ul>
+      <li><a href="#">Seahorse Home</a></li>
+      <li><a href="#">Seahorse News</a></li>
+      <li><a href="#">Seahorse Science</a></li>
+      <li><a href="#">Seahorse Fiction</a></li>
+      <li><a href="#">Seahorse Fables</a></li>
+      <li><a href="#">Seahorse Songs</a></li>
+    </ul></nav>
     <article class="span-col-2">  <h1>SEAHORSE FACTS</h1>
       <h2>Name</h2>
       <p>The Latin name for seahorse is Hippocampus which means "Horse Caterpillar"</p>
